@@ -14,6 +14,9 @@
 		A3AED4541ED855BE00F34514 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3AED4521ED855BE00F34514 /* LaunchScreen.storyboard */; };
 		A3AED45F1ED855BE00F34514 /* SlideshowAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AED45E1ED855BE00F34514 /* SlideshowAppTests.swift */; };
 		A3AED46A1ED855BE00F34514 /* SlideshowAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AED4691ED855BE00F34514 /* SlideshowAppUITests.swift */; };
+		A3AED4781ED856A900F34514 /* image01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3AED4771ED856A900F34514 /* image01.jpg */; };
+		A3AED47A1ED856C500F34514 /* image02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3AED4791ED856C500F34514 /* image02.jpg */; };
+		A3AED47C1ED856CD00F34514 /* image03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A3AED47B1ED856CD00F34514 /* image03.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		A3AED4651ED855BE00F34514 /* SlideshowAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideshowAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3AED4691ED855BE00F34514 /* SlideshowAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideshowAppUITests.swift; sourceTree = "<group>"; };
 		A3AED46B1ED855BE00F34514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3AED4771ED856A900F34514 /* image01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image01.jpg; path = "../../OneDrive/画像/カメラ ロール/image01.jpg"; sourceTree = "<group>"; };
+		A3AED4791ED856C500F34514 /* image02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image02.jpg; path = "../../OneDrive/画像/カメラ ロール/image02.jpg"; sourceTree = "<group>"; };
+		A3AED47B1ED856CD00F34514 /* image03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = image03.jpg; path = "../../OneDrive/画像/カメラ ロール/image03.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,9 @@
 				A3AED45D1ED855BE00F34514 /* SlideshowAppTests */,
 				A3AED4681ED855BE00F34514 /* SlideshowAppUITests */,
 				A3AED4471ED855BE00F34514 /* Products */,
+				A3AED4771ED856A900F34514 /* image01.jpg */,
+				A3AED4791ED856C500F34514 /* image02.jpg */,
+				A3AED47B1ED856CD00F34514 /* image03.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,8 +241,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3AED4781ED856A900F34514 /* image01.jpg in Resources */,
 				A3AED4541ED855BE00F34514 /* LaunchScreen.storyboard in Resources */,
 				A3AED4511ED855BE00F34514 /* Assets.xcassets in Resources */,
+				A3AED47C1ED856CD00F34514 /* image03.jpg in Resources */,
+				A3AED47A1ED856C500F34514 /* image02.jpg in Resources */,
 				A3AED44F1ED855BE00F34514 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
