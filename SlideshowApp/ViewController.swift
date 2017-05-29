@@ -22,6 +22,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    var imageArray = ["image01.jpg","image02.jpg","image03.jpg"]
+    
+    var count = 0
+    
+    
+    @IBOutlet weak var next: UIButton!
+        
+    @IBOutlet weak var back: UIButton!
+    
+    @IBOutlet weak var start: UIButton!
+    
+    
 
 }
 
