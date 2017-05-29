@@ -29,25 +29,33 @@
                                 <rect key="frame" x="24" y="400" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="back:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LWA-we-lap"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63R-ws-PZg">
-                                <rect key="frame" x="154" y="400" width="67" height="30"/>
+                                <rect key="frame" x="172" y="400" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="再生/停止"/>
+                                <state key="normal" title="再生"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jpa-Tw-b9y"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYc-Sb-Ifg">
                                 <rect key="frame" x="321" y="400" width="31" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="進む"/>
+                                <connections>
+                                    <action selector="next:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UZ3-5u-Op5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="back" destination="a0H-Zy-nTf" id="Xm9-lS-I3s"/>
-                        <outlet property="go" destination="vYc-Sb-Ifg" id="NKc-Gp-bTI"/>
                         <outlet property="imageView" destination="hze-Cf-Cx0" id="JBI-yv-bFM"/>
-                        <outlet property="next" destination="vYc-Sb-Ifg" id="gPf-bN-Ut1"/>
+                        <outlet property="nextButton" destination="vYc-Sb-Ifg" id="8cT-Iz-0oc"/>
                         <outlet property="start" destination="63R-ws-PZg" id="sbS-Nl-pw6"/>
                     </connections>
                 </viewController>
