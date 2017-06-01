@@ -12,16 +12,22 @@ class ResultViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imageView.image = UIImage(named: imagename)
         // Do any additional setup after loading the view.
     }
 
+   
+    @IBOutlet weak var imageView: UIImageView!
+    
+    var imagename: String = ""
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     /*
     // MARK: - Navigation
 

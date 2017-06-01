@@ -38,6 +38,20 @@ class ViewController: UIViewController {
             imageView.image = UIImage(named:imageArray[count])
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // segueから遷移先のResultViewControllerを取得する
+        let resultViewController:ResultViewController = segue.destination as! ResultViewController
+        // 遷移先のResultViewControllerで宣言しているx, yに値を代入して渡す
+        resultViewController.imagename = imageArray[count]
+        if (timer != nil){
+            timer.invalidate()
+            timer = nil
+            nextButton.isEnabled = true
+            back.isEnabled = true
+            start.setTitle("再生", for: .normal)
+        }
+    }
+    
     
     @IBOutlet weak var back: UIButton!
     
@@ -47,18 +61,27 @@ class ViewController: UIViewController {
         imageView.image = UIImage(named:imageArray[count])
     }
     @IBOutlet weak var start: UIButton!
+
+    
     
     var timer:Timer!
     
     @IBAction func start(_ sender: Any) {
         if ( timer == nil){
         timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+            nextButton.isEnabled = false
+            back.isEnabled = false
+            start.setTitle("停止", for: .normal)
         }
         else{
             timer.invalidate()
             timer = nil
+            nextButton.isEnabled = true
+            back.isEnabled = true
+            start.setTitle("再生", for: .normal)
         }
         
+
     }
     
     func update(){
@@ -66,5 +89,9 @@ class ViewController: UIViewController {
         if ( count < 0 ) { count = 2 }
         imageView.image = UIImage(named:imageArray[count])
     }
+    
+    @IBAction func unwind(segue: UIStoryboardSegue) {
+    }
+
 }
 
