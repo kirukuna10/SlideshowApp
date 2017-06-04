@@ -17,6 +17,7 @@ class ResultViewController: UIViewController {
     }
 
    
+    
     @IBOutlet weak var imageView: UIImageView!
     
     var imagename: String = ""
